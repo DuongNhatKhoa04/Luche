@@ -1,6 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luche.Product.API", "Luche.Product.API\Luche.Product.API.csproj", "{BFD1DE5E-C444-4918-9653-2FBC4FB51869}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luche.Api", "Luche.Api\Luche.Api.csproj", "{63633FA1-44FB-4567-98CA-64235DCFE9E5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{29E9577B-DB7F-410F-B0C8-B13E606487B4} = {29E9577B-DB7F-410F-B0C8-B13E606487B4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luche.Application", "Luche.Application\Luche.Application.csproj", "{B603463E-EFB6-47A4-8059-CFBE54E3FEEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luche.Domain", "Luche.Domain\Luche.Domain.csproj", "{67545232-79CA-4AB1-925E-C82C323F0CDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Luche.Infrastructure", "Luche.Infrastructure\Luche.Infrastructure.csproj", "{29E9577B-DB7F-410F-B0C8-B13E606487B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B603463E-EFB6-47A4-8059-CFBE54E3FEEC} = {B603463E-EFB6-47A4-8059-CFBE54E3FEEC}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +23,27 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BFD1DE5E-C444-4918-9653-2FBC4FB51869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BFD1DE5E-C444-4918-9653-2FBC4FB51869}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BFD1DE5E-C444-4918-9653-2FBC4FB51869}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BFD1DE5E-C444-4918-9653-2FBC4FB51869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63633FA1-44FB-4567-98CA-64235DCFE9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63633FA1-44FB-4567-98CA-64235DCFE9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63633FA1-44FB-4567-98CA-64235DCFE9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63633FA1-44FB-4567-98CA-64235DCFE9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B603463E-EFB6-47A4-8059-CFBE54E3FEEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B603463E-EFB6-47A4-8059-CFBE54E3FEEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B603463E-EFB6-47A4-8059-CFBE54E3FEEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B603463E-EFB6-47A4-8059-CFBE54E3FEEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67545232-79CA-4AB1-925E-C82C323F0CDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67545232-79CA-4AB1-925E-C82C323F0CDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67545232-79CA-4AB1-925E-C82C323F0CDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67545232-79CA-4AB1-925E-C82C323F0CDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E9577B-DB7F-410F-B0C8-B13E606487B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E9577B-DB7F-410F-B0C8-B13E606487B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E9577B-DB7F-410F-B0C8-B13E606487B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E9577B-DB7F-410F-B0C8-B13E606487B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EA15F7E-1334-46FB-AF0C-9DA2865C4F46}
 	EndGlobalSection
 EndGlobal
